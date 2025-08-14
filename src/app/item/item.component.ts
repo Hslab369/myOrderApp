@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./item.component.css'],
 })
 export class ItemComponent {
-  @Input() name : string = '';
-  @Input() price : number = 0;
+
+  @Input('itemName') name: string = '';
+  @Input('itemPrice') price: number = 0;
 }

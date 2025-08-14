@@ -7,10 +7,10 @@
 >
 </app-item> -->
 
-@for (item of items; track item.name){
+@for (item of items; track item.itemName){
   <app-item 
-  [itemName]="item.name" 
-  [itemPrice]="item.price"></app-item>
+  [itemName]="item.itemName" 
+  [itemPrice]="item.itemPrice"></app-item>
 }
 
 <div>Items: {{ items.length }} | Total: {{ totalPrice }}</div>
