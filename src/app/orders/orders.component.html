@@ -1,0 +1,16 @@
+<div>Name: {{ customerName }}</div>
+
+<!-- <app-item
+  *ngFor="let item of items"
+  [itemName]="item.itemName"
+  [itemPrice]="item.itemPrice"
+>
+</app-item> -->
+
+@for (item of items; track item.name){
+  <app-item 
+  [itemName]="item.name" 
+  [itemPrice]="item.price"></app-item>
+}
+
+<div>Items: {{ items.length }} | Total: {{ totalPrice }}</div>
